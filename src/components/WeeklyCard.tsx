@@ -22,7 +22,7 @@ const WeeklyCard = ({ temp, icon, hour, onPress }: WeeklyCardProps) => {
     <TouchableOpacity onPress={onPress} style={styles.container}>
       <Text style={styles.temp}>{temp}°</Text>
       <Image
-        source={icon ? icon : icons["Partly cloudy"]}
+        source={icon ? icon : icons["other"]}
         style={{ width: 44, height: 44 }}
         resizeMode="contain"
       />
